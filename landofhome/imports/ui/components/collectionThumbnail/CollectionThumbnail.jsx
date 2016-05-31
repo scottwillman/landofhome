@@ -13,7 +13,7 @@ export default class CollectionThumbnail extends React.Component {
 	// }
 
 	render() {
-
+		// TEST!
 		const containerStyle = {
 			backgroundColor: '#FFFFFF',
 			padding: 6,
