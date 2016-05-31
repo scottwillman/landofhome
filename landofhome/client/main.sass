@@ -1,0 +1,106 @@
+@import "../node_modules/bootstrap/scss/_variables.scss"
+// overrides go here!
+$enable-rounded: false
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss"
+
+a
+	color: $gray
+
+button
+	background-color: $gray
+	color: #FFFFFF
+	border-radius: .15rem
+
+.smallFont
+	@extend .text-uppercase
+	letter-spacing: .12rem
+	font-size: .8rem
+	font-weight: 500
+	// color: $gray
+
+// .cmptAccountsSignUpForm, .cmptAccountsLoginForm
+// 	button
+// 		background-color: $gray
+// 		color: #FFFFFF
+// 		border-radius: .2rem
+
+.cmptCollectionThumbnail
+	border: 1px solid $gray-lighter*.95
+
+	&:hover
+		text-decoration: none
+
+	h2
+		font-size: 1.5rem
+		color: $gray
+		margin: 0
+		font-family: $font-family-serif
+
+	p
+		font-size: .85rem
+		padding-top: 2px
+		margin-bottom: 0
+		color: $gray
+
+.cmptProductGridProduct
+	border: 1px solid $gray-lighter*.95
+	padding: 6px
+
+	p
+		font-size: .85rem
+		padding-top: 2px
+		margin-bottom: 0
+		color: $gray
+
+
+#loh-public-top-header
+	padding-top: .6rem
+	padding-bottom: .6rem
+
+	.navbar-brand
+		font-size: 1.8rem
+		font-variant: small-caps
+		font-weight: 200
+		letter-spacing: .3rem
+
+	.pull-lg-right
+		.btn-toolbar a
+			@extend .smallFont
+			line-height: 4
+			padding: 0 .5rem
+			padding-left: 1.5rem
+
+
+#loh-navbar-main
+	border: 1px solid $gray-lighter
+
+	.nav-item
+		padding-right: 1.5rem
+
+	.nav-link
+		@extend .smallFont
+
+#loh-public-primary-content-container
+	// padding-top: 1.5rem
+
+#loh-footer
+	@extend .smallFont
+	font-size: .65rem
+	text-align: center
+	margin-top: 1.2rem
+	margin-bottom: 1rem
+
+#loh-collection-header
+	h2
+		font-family: $font-family-serif
+
+	#loh-collection-text
+		font-size: .9rem
+		font-family: $font-family-serif
+
+	#loh-collection-retailers
+		font-size: .8rem
+
+	#loh-collection-imagesource
+		font-size: .8rem
