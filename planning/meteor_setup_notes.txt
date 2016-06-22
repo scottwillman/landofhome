@@ -1,5 +1,4 @@
-npm install --save react react-dom react-mounter
-npm install --save react-router
+npm install --save react react-dom react-mounter react-router
 meteor remove blaze-html-templates
 meteor add static-html
 
@@ -24,7 +23,7 @@ meteor npm install --save bootstrap@4.0.0-alpha.2
 https://atmospherejs.com/fourseven/scss (sass compiler for bootstrap sass)
 meteor remove standard-minifier-css
 meteor add seba:minifiers-autoprefixer
-meteor add fourseven:scss
+meteor add fourseven:scss@=3.2.0 # current version of libsass fails when trying to import sass into scss (treats it as scss)
 
 Create a client/main.sass containing:
 

@@ -37,11 +37,13 @@ export default class extends React.Component {
 					{this.props.children}
 				</div>
 
-				<div id="loh-footer" className="container">
-					<Col md={3}>About Us</Col>
-					<Col md={3}>Terms of Service</Col>
-					<Col md={3}>Privacy</Col>
-					<Col md={3}>Help</Col>
+				<div className="fluid-container" id="loh-footer">
+					<div className="container">
+						<Col md={3}>About Us</Col>
+						<Col md={3}>Terms of Service</Col>
+						<Col md={3}>Privacy</Col>
+						<Col md={3}>Help</Col>
+					</div>
 				</div>
 			</div>
 		);

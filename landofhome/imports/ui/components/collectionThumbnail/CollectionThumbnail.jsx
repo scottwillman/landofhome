@@ -2,7 +2,7 @@ import React from 'react';
 import { Grid, Row, Col } from 'react-bootstrap';
 import { Link } from 'react-router'
 
-import ImageFillArea from '../ImageFillArea.jsx'
+import ImageFillArea from '/imports/ui/components/ImageFillArea.jsx';
 
 
 export default class CollectionThumbnail extends React.Component {
@@ -87,7 +87,7 @@ export default class CollectionThumbnail extends React.Component {
 	}
 }
 CollectionThumbnail.propTypes = {
-	idx: React.PropTypes.string.isRequired,
+	idx: React.PropTypes.number.isRequired,
 	title: React.PropTypes.string.isRequired,
 	primaryImagePath: React.PropTypes.string.isRequired,
 	primaryImageHeight: React.PropTypes.number.isRequired

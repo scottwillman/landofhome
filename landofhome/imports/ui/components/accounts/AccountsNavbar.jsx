@@ -54,7 +54,7 @@ export default class AccountsNavbar extends React.Component {
 					trigger="click"
 					placement="bottom"
 					overlay={
-						<div style={containerStyle}>
+						<div className="cmptAccountsPopoverContainer">
 							<AccountsSignUpForm />
 							<div style={cancelStyle}><a href="#" onClick={this.signUpHide.bind(this)}>No, thanks</a></div>
 						</div>
@@ -68,7 +68,7 @@ export default class AccountsNavbar extends React.Component {
 					trigger="click"
 					placement="bottom"
 					overlay={
-						<div style={containerStyle}>
+						<div className="cmptAccountsPopoverContainer">
 							<AccountsLoginForm />
 						</div>
 					}

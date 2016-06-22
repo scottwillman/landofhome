@@ -1,7 +1,7 @@
 import React from 'react';
 import { Grid, Row, Col } from 'react-bootstrap';
 
-import CollectionThumbnail from '../../ui/components/collectionThumbnail/CollectionThumbnail.jsx'
+import CollectionThumbnail from '/imports/ui/components/collectionThumbnail/CollectionThumbnail.jsx';
 
 
 export default class Home extends React.Component {
@@ -18,10 +18,11 @@ export default class Home extends React.Component {
 	render() {
 
 		const fluidContainerStyle = {
-			backgroundColor: '#ebebeb',
+			// backgroundColor: '#ebebeb',
+			backgroundColor: '#fff',
 		};
 		const containerStyle = {
-			padding: '12px 0.9375rem',
+			// padding: '12px 0.9375rem',
 		};
 		const secondaryRowStyle = {
 			marginTop: "1.875rem"

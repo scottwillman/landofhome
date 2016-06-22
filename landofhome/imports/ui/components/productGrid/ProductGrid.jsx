@@ -20,11 +20,11 @@ export class ProductGrid extends React.Component {
 		}
 
 		return (
-			<div className="row" style={rowStyle}>
+			<div className="row clearfix cmptProductGrid" style={rowStyle}>
 				{this.props.products.map((product) => (
-					<Col lg={3} sm={4} xs={6} style={colStyle} key={product._id}>
+					<Col lg={15} sm={4} xs={6} style={colStyle} key={product._id}>
 
-						<Product product={product}/>
+						<Product product={product} />
 
 					</Col>
 				))}

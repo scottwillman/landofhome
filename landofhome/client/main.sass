@@ -1,57 +1,86 @@
 @import "../node_modules/bootstrap/scss/_variables.scss"
 // overrides go here!
 $enable-rounded: false
+// $grid-gutter-width: 0
 
 @import "../node_modules/bootstrap/scss/bootstrap.scss"
 
+@font-face
+	font-family: loh_Sans
+	src: url('/fonts/PT_Sans/PT_Sans-Web-Regular.ttf')
+
+@font-face
+    font-family: loh_Serif
+    src: url('/fonts/Libre_Baskerville/LibreBaskerville-Regular.ttf')
+
+
+.font-sans-regular
+	// font-family: loh_Sans
+	font-family: 'Helvetica Neue'
+	font-size: .8rem
+	line-height: 1rem
+	letter-spacing: .025rem
+
+.font-serif-regular
+	font-family: loh_Serif
+	font-size: .9rem
+	line-height: 1.3rem
+	letter-spacing: .015rem
+
+
+.container
+	padding: 0
+
 a
 	color: $gray
+	&:hover
+		text-decoration: none
 
 button
 	background-color: $gray
 	color: #FFFFFF
 	border-radius: .15rem
 
-.smallFont
+.small-caps
 	@extend .text-uppercase
 	letter-spacing: .12rem
 	font-size: .8rem
 	font-weight: 500
 	// color: $gray
 
-// .cmptAccountsSignUpForm, .cmptAccountsLoginForm
-// 	button
-// 		background-color: $gray
-// 		color: #FFFFFF
-// 		border-radius: .2rem
 
-.cmptCollectionThumbnail
-	border: 1px solid $gray-lighter*.95
+/* 5 Columns */
 
-	&:hover
-		text-decoration: none
+.col-xs-15,
+.col-sm-15,
+.col-md-15,
+.col-lg-15
+    position: relative
+    min-height: 1px
+    padding-right: 10px
+    padding-left: 10px
 
-	h2
-		font-size: 1.5rem
-		color: $gray
-		margin: 0
-		font-family: $font-family-serif
 
-	p
-		font-size: .85rem
-		padding-top: 2px
-		margin-bottom: 0
-		color: $gray
+.col-xs-15
+    width: 20%
+    float: left
 
-.cmptProductGridProduct
-	border: 1px solid $gray-lighter*.95
-	padding: 6px
+@media (min-width: 768px)
+    .col-sm-15
+        width: 20%
+        float: left
 
-	p
-		font-size: .85rem
-		padding-top: 2px
-		margin-bottom: 0
-		color: $gray
+@media (min-width: 992px)
+    .col-md-15
+        width: 20%
+        float: left
+
+@media (min-width: 1200px)
+    .col-lg-15
+        width: 20%
+        float: left
+
+/* End 5 Columns */
 
 
 #loh-public-top-header
@@ -66,7 +95,7 @@ button
 
 	.pull-lg-right
 		.btn-toolbar a
-			@extend .smallFont
+			@extend .small-caps
 			line-height: 4
 			padding: 0 .5rem
 			padding-left: 1.5rem
@@ -79,28 +108,36 @@ button
 		padding-right: 1.5rem
 
 	.nav-link
-		@extend .smallFont
+		@extend .small-caps
 
 #loh-public-primary-content-container
 	// padding-top: 1.5rem
 
 #loh-footer
-	@extend .smallFont
+	@extend .small-caps
 	font-size: .65rem
 	text-align: center
 	margin-top: 1.2rem
-	margin-bottom: 1rem
+	margin-bottom: 3rem
+	padding-top: 1.2rem
+	border-top: 1px solid $gray-lighter
+
 
 #loh-collection-header
 	h2
-		font-family: $font-family-serif
+		// font-family: $font-family-serif
+		font-family: PT_Serif
 
 	#loh-collection-text
-		font-size: .9rem
-		font-family: $font-family-serif
+		@extend .font-serif-regular
+
 
 	#loh-collection-retailers
 		font-size: .8rem
 
 	#loh-collection-imagesource
 		font-size: .8rem
+
+@import "../imports/ui/components/accounts/Accounts.sass"
+@import "../imports/ui/components/collectionThumbnail/CollectionThumbnail.sass"
+@import "../imports/ui/components/productGrid/ProductGrid.sass"

@@ -3,6 +3,12 @@ import React from 'react';
 
 export default class ImageFillArea extends React.Component {
 
+	// constructor(props) {
+	// 	super(props);
+	//
+	// 	console.log(props);
+	// }
+
 	render() {
 
 		const imageStyle = {
@@ -10,7 +16,7 @@ export default class ImageFillArea extends React.Component {
 			backgroundSize: "cover",
 			backgroundPosition: "center",
 			backgroundRepeat: "no-repeat",
-			height: this.props.imageHeight+"px",
+			height: this.props.imageHeight,
 			width: "100%",
 			opacity: Math.random() * (1 - .4) + .4 // Just for visualization using the same gray image everywhere
 		}
